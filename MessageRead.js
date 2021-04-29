@@ -64,11 +64,19 @@
     
 
   $.ajax({
-    url: 'http://127.0.0.1:4443/'
+    url: 'https://127.0.0.1:4443/'
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL41-http' + JSON.stringify(error));
+    $('#itemId').text('FAIL42-https' + JSON.stringify(error));
+  });
+    
+    $.ajax({
+    url: 'https://localhost:4443/'
+  }).done(function(dat){
+    $('#itemType').text('SUCCESS');
+  }).fail(function(error){
+    $('#itemType').text('FAIL42a-https' + JSON.stringify(error));
   });
     
 
@@ -76,7 +84,7 @@
     $('#dateTimeModified').text(item.dateTimeModified.toLocaleString());
     $('#itemClass').text(item.itemClass);
     //$('#itemId').text(item.itemId);
-    $('#itemType').text(item.itemType);
+    //$('#itemType').text(item.itemType);
 
     $('#message-props').show();
 
