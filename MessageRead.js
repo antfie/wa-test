@@ -64,7 +64,7 @@
     
 
   $.ajax({
-    url: 'https://127.0.0.1:4443/'
+    url: 'http://127.0.0.1:4443/'
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
