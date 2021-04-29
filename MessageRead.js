@@ -64,11 +64,11 @@
     
 
   $.ajax({
-    url: 'http://127.0.0.1:4443/'
+    url: 'https://127.0.0.1:4443/'
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL2' + error);
+    $('#itemId').text('FAIL3' + JSON.stringify(error));
   });
     
 
