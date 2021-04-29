@@ -68,7 +68,7 @@
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL41' + JSON.stringify(error));
+    $('#itemId').text('FAIL41-http' + JSON.stringify(error));
   });
     
 
