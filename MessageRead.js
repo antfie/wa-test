@@ -68,15 +68,15 @@
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL44-https' + JSON.stringify(error));
+    $('#itemId').text('FAIL94-https' + JSON.stringify(error));
   });
     
     $.ajax({
-    url: 'https://localhost:4443/'
+    url: 'https://localhost'
   }).done(function(dat){
     $('#itemType').text('SUCCESS');
   }).fail(function(error){
-    $('#itemType').text('FAIL44a-https' + JSON.stringify(error));
+    $('#itemType').text('FAIL94a-https' + JSON.stringify(error));
   });
     
       $.ajax({
@@ -84,7 +84,7 @@
   }).done(function(dat){
     $('#itemClass').text('SUCCESS');
   }).fail(function(error){
-    $('#itemClass').text('FAIL44b-https' + JSON.stringify(error));
+    $('#itemClass').text('FAIL94b-https' + JSON.stringify(error));
   });
     
 
