@@ -60,11 +60,22 @@
   // message-specific properties.
   function loadProps() {
     var item = Office.context.mailbox.item;
+    
+    
+
+  $.ajax({
+    url: 'http://127.0.0.1:4443/'
+  }).done(function(dat){
+    $('#itemId').text('SUCCESS');
+  }).fail(function(error){
+    $('#itemId').text('FAIL');
+  });
+    
 
     $('#dateTimeCreated').text(item.dateTimeCreated.toLocaleString());
     $('#dateTimeModified').text(item.dateTimeModified.toLocaleString());
     $('#itemClass').text(item.itemClass);
-    $('#itemId').text(item.itemId);
+    //$('#itemId').text(item.itemId);
     $('#itemType').text(item.itemType);
 
     $('#message-props').show();
