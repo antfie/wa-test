@@ -68,7 +68,7 @@
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL42-https' + JSON.stringify(error));
+    $('#itemId').text('FAIL44-https' + JSON.stringify(error));
   });
     
     $.ajax({
@@ -76,13 +76,21 @@
   }).done(function(dat){
     $('#itemType').text('SUCCESS');
   }).fail(function(error){
-    $('#itemType').text('FAIL42a-https' + JSON.stringify(error));
+    $('#itemType').text('FAIL44a-https' + JSON.stringify(error));
+  });
+    
+      $.ajax({
+    url: 'https://antfie.com/'
+  }).done(function(dat){
+    $('#itemClass').text('SUCCESS');
+  }).fail(function(error){
+    $('#itemClass').text('FAIL44b-https' + JSON.stringify(error));
   });
     
 
     $('#dateTimeCreated').text(item.dateTimeCreated.toLocaleString());
     $('#dateTimeModified').text(item.dateTimeModified.toLocaleString());
-    $('#itemClass').text(item.itemClass);
+    //$('#itemClass').text(item.itemClass);
     //$('#itemId').text(item.itemId);
     //$('#itemType').text(item.itemType);
 
