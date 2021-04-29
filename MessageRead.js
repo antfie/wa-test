@@ -68,7 +68,7 @@
   }).done(function(dat){
     $('#itemId').text('SUCCESS');
   }).fail(function(error){
-    $('#itemId').text('FAIL');
+    $('#itemId').text('FAIL2' + error);
   });
     
 
