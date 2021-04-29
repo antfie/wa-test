@@ -64,27 +64,27 @@
     
 
   $.ajax({
-    url: 'https://localhost/'
+    url: 'https://127.0.0.1/'
   }).done(function(dat){
-    $('#itemId').text('SUCCESS111');
+    $('#itemId').text('SUCCESSAAAAAAAAAAAA111');
   }).fail(function(error){
-    $('#itemId').text('FAIL95-https' + JSON.stringify(error));
+    $('#itemId').text('FAIL1195-https' + JSON.stringify(error));
   });
     
     $.ajax({
-    url: 'https://localhost'
+    url: 'https://127.0.0.1'
   }).done(function(dat){
-    $('#itemType').text('SUCCESS222');
+    $('#itemType').text('SUCCESSAAAAAAAAAAAAA222');
   }).fail(function(error){
-    $('#itemType').text('FAIL945-https' + JSON.stringify(error));
+    $('#itemType').text('FAIL11945-https' + JSON.stringify(error));
   });
     
       $.ajax({
     url: 'https://antfie.com/'
   }).done(function(dat){
-    $('#itemClass').text('SUCCESS333');
+    $('#itemClass').text('SUCCESAAAAAAS333');
   }).fail(function(error){
-    $('#itemClass').text('FAIL95b-https' + JSON.stringify(error));
+    $('#itemClass').text('FAIL1195b-https' + JSON.stringify(error));
   });
     
 
